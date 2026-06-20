@@ -1,0 +1,602 @@
+npm create vite@latest my-react-app -- --template reactnpm create vite@latest my-react-app -- --template react<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MEYYARASU V | Student Portfolio</title>
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" data-scroll>
+        <span class="brand-badge" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+        <span>MEYYARASU V</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" data-scroll>About</a>
+        <a href="#skills" data-scroll>Skills</a>
+        <a href="#education" data-scroll>Education</a>
+        <a href="#certifications" data-scroll>Certifications</a>
+        <a href="#projects" data-scroll>Projects</a>
+        <a href="#contact" data-scroll>Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#contact" data-scroll>
+          <i class="fa-solid fa-paper-plane"></i>
+          Contact Me
+        </a>
+      </div>
+
+      <button class="hamburger" type="button" aria-label="Open menu" data-mobile-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="container mobile-menu" data-mobile-menu>
+      <div class="mobile-links" aria-label="Mobile Navigation">
+        <a href="#about" data-scroll>About</a>
+        <a href="#skills" data-scroll>Skills</a>
+        <a href="#education" data-scroll>Education</a>
+        <a href="#certifications" data-scroll>Certifications</a>
+        <a href="#projects" data-scroll>Projects</a>
+        <a href="#contact" data-scroll>Contact</a>
+        <a href="#resume" data-scroll>Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card reveal">
+          <div class="hero-content">
+            <div class="kicker">
+              <span class="kicker-dot" aria-hidden="true"></span>
+              <span>Computer Science Engineering Student • Full Stack Focus</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="gradient-text">MEYYARASU V</span>
+            </h1>
+
+            <p class="hero-sub">
+              Role: <strong>Computer Science Engineering Student</strong><br />
+              Career Goal: <strong>Full Stack Web Developer</strong>
+            </p>
+
+            <p class="hero-sub">
+              Building modern, responsive web applications with a strong foundation in frontend + backend.
+              Passionate about scalable systems, clean UI, and continuous learning.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact" data-scroll>
+                <i class="fa-solid fa-address-book"></i>
+                Contact Me
+              </a>
+              <a class="btn" href="#resume" data-download-resume>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download Resume
+              </a>
+            </div>
+
+            <div class="hero-actions" style="margin-top:14px;">
+              <span class="tag"><i class="fa-solid fa-location-dot" style="color:var(--accent); margin-right:8px;"></i>India • Remote-ready</span>
+              <span class="tag"><i class="fa-solid fa-sparkles" style="color:var(--accent); margin-right:8px;"></i>Internship-ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-mini reveal" style="transition-delay:80ms;">
+          <div class="profile-wrap">
+            <div class="profile" aria-label="Profile image placeholder">
+              <!-- Placeholder image: replace src with your professional photo if needed -->
+              <div class="profile-placeholder">
+                <div class="placeholder">
+                  <div class="circle" aria-hidden="true"><i class="fa-solid fa-user-tie" style="font-size:30px;"></i></div>
+                  <div style="font-weight:800;">Profile Image Placeholder</div>
+                  <div style="color:rgba(255,255,255,.65); font-size:13px; margin-top:6px;">Professional student photo</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats" aria-label="Quick stats">
+              <div class="stat">
+                <div class="num">6+</div>
+                <div class="lbl">Projects / Demos</div>
+              </div>
+              <div class="stat">
+                <div class="num">7</div>
+                <div class="lbl">Core Skill Areas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-sm" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Me</h2>
+          <p>Focused on full stack development, problem solving, and real-world applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-text reveal">
+            <h3 style="margin:0; font-size:18px;">Student • Developer • Lifelong Learner</h3>
+            <p class="lead">
+              I’m V.M. Arasu, a Computer Science Engineering student with a strong interest in building modern web platforms.
+              I enjoy turning ideas into clean, responsive interfaces and integrating them with backend services.
+            </p>
+            <p class="lead" style="margin-bottom:0;">
+              My approach combines thoughtful UI/UX, structured coding practices, and continuous improvement.
+            </p>
+          </div>
+
+          <div class="card about-text reveal" style="transition-delay:90ms;">
+            <h3 style="margin:0; font-size:18px;">Career Objective</h3>
+            <p class="lead">
+              To become a <strong>Full Stack Web Developer</strong> who can design scalable applications,
+              write maintainable code, and deliver high-quality user experiences.
+            </p>
+            <div class="badge-list" aria-label="Areas of interest">
+              <span class="badge"><span class="spark" aria-hidden="true">✦</span>Full Stack Web Development</span>
+              <span class="badge"><span class="spark" aria-hidden="true">✦</span>Artificial Intelligence</span>
+              <span class="badge"><span class="spark" aria-hidden="true">✦</span>Cloud Computing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p>Tools and technologies I use to build reliable, responsive applications.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">HTML</div>
+                <div class="skill-meta">Semantic structure & accessibility</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:70ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">CSS</div>
+                <div class="skill-meta">Responsive layouts & animations</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:140ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">JavaScript</div>
+                <div class="skill-meta">DOM, APIs & client-side logic</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:210ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">React</div>
+                <div class="skill-meta">Component-based UI development</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:280ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-node-js" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">Node.js</div>
+                <div class="skill-meta">Backends, APIs & tooling</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:350ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">Java</div>
+                <div class="skill-meta">OOP fundamentals & applications</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:420ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-python" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">Python</div>
+                <div class="skill-meta">Scripts, automation & data work</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:490ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">MySQL</div>
+                <div class="skill-meta">Relational databases & queries</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card skill-card reveal" style="transition-delay:560ms;">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt" aria-hidden="true"></i></div>
+              <div>
+                <div class="skill-title">Git & GitHub</div>
+                <div class="skill-meta">Version control & collaboration</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <p>Timeline of academic progress and achievements.</p>
+        </div>
+
+        <div class="card timeline reveal" style="padding: 22px;">
+          <div class="edu-item">
+            <span class="edu-dot" aria-hidden="true"></span>
+            <div class="edu-body">
+              <div class="edu-title">B.E. / B.Tech in Computer Science Engineering (CSE)</div>
+              <div class="edu-sub">College Name • Expected Year: 20XX</div>
+              <div class="edu-ach">Academic achievements: Relevant coursework, project work, and consistent performance.</div>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <span class="edu-dot" aria-hidden="true"></span>
+            <div class="edu-body">
+              <div class="edu-title">Senior Secondary / Higher Secondary</div>
+              <div class="edu-sub">School Name • Year: 20XX</div>
+              <div class="edu-ach">Highlights: Strong fundamentals, participation in tech-related events.</div>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <span class="edu-dot" aria-hidden="true"></span>
+            <div class="edu-body">
+              <div class="edu-title">Secondary Education</div>
+              <div class="edu-sub">School Name • Year: 20XX</div>
+              <div class="edu-ach">Highlights: Discipline, curiosity for problem-solving, and consistent results.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Certifications</h2>
+          <p>Responsive cards with certificate placeholders (replace with your images later).</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card cert-card reveal">
+            <div class="cert-img">Certificate Image</div>
+            <div class="cert-name">Infosys Springboard</div>
+            <div class="cert-meta">Placeholder • Course completion</div>
+          </article>
+
+          <article class="card cert-card reveal" style="transition-delay:90ms;">
+            <div class="cert-img">Certificate Image</div>
+            <div class="cert-name">NPTEL</div>
+            <div class="cert-meta">Placeholder • Achievement</div>
+          </article>
+
+          <article class="card cert-card reveal" style="transition-delay:180ms;">
+            <div class="cert-img">Certificate Image</div>
+            <div class="cert-name">Coursera</div>
+            <div class="cert-meta">Placeholder • Specialized learning</div>
+          </article>
+
+          <article class="card cert-card reveal" style="transition-delay:270ms;">
+            <div class="cert-img">Certificate Image</div>
+            <div class="cert-name">Additional Certification</div>
+            <div class="cert-meta">Placeholder • Add your own</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Journey -->
+    <section class="section" id="learning">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Learning Journey</h2>
+          <p>Technologies currently learning with progress indicators.</p>
+        </div>
+
+        <div class="learning-grid">
+          <div class="card progress-card reveal" data-progress="72">
+            <div class="progress-top">
+              <div class="label"><i class="fa-brands fa-react" style="color:var(--accent); margin-right:10px;"></i>React + UI Patterns</div>
+              <div class="pct">72%</div>
+            </div>
+            <div class="progress-bar" aria-label="React progress">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="card progress-card reveal" style="transition-delay:90ms;" data-progress="64">
+            <div class="progress-top">
+              <div class="label"><i class="fa-solid fa-server" style="color:var(--accent); margin-right:10px;"></i>Node.js APIs</div>
+              <div class="pct">64%</div>
+            </div>
+            <div class="progress-bar" aria-label="Node progress">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="card progress-card reveal" style="transition-delay:180ms;" data-progress="55">
+            <div class="progress-top">
+              <div class="label"><i class="fa-solid fa-cloud-arrow-up" style="color:var(--accent); margin-right:10px;"></i>Cloud Basics</div>
+              <div class="pct">55%</div>
+            </div>
+            <div class="progress-bar" aria-label="Cloud progress">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="card progress-card reveal" style="transition-delay:270ms;" data-progress="48">
+            <div class="progress-top">
+              <div class="label"><i class="fa-solid fa-brain" style="color:var(--accent); margin-right:10px;"></i>AI Fundamentals</div>
+              <div class="pct">48%</div>
+            </div>
+            <div class="progress-bar" aria-label="AI progress">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p>Placeholder project cards with image placeholders and GitHub buttons.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card project-card reveal">
+            <div class="project-img">Project Image</div>
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-desc">A modern dark-theme portfolio with smooth scrolling, glass cards, and responsive sections.</div>
+            <div class="project-actions">
+              <span class="tag">HTML • CSS • JS</span>
+              <a class="btn btn-icon" href="#" aria-label="GitHub Portfolio" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="transition-delay:90ms;">
+            <div class="project-img">Project Image</div>
+            <div class="project-title">Calculator App</div>
+            <div class="project-desc">A fast calculator UI with clean validation and dynamic calculations.</div>
+            <div class="project-actions">
+              <span class="tag">JavaScript</span>
+              <a class="btn btn-icon" href="#" aria-label="GitHub Calculator" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="transition-delay:180ms;">
+            <div class="project-img">Project Image</div>
+            <div class="project-title">To-Do List App</div>
+            <div class="project-desc">A practical to-do list with filtering, persistence-ready structure, and responsive layout.</div>
+            <div class="project-actions">
+              <span class="tag">Frontend UI</span>
+              <a class="btn btn-icon" href="#" aria-label="GitHub To-Do" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" style="transition-delay:270ms;">
+            <div class="project-img">Project Image</div>
+            <div class="project-title">Weather App</div>
+            <div class="project-desc">A weather UI with clean cards, loading states, and API-ready architecture (placeholder).</div>
+            <div class="project-actions">
+              <span class="tag">APIs • UI</span>
+              <a class="btn btn-icon" href="#" aria-label="GitHub Weather" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Resume</h2>
+          <p>Download button + preview placeholder card.</p>
+        </div>
+
+        <div class="resume-grid">
+          <div class="card preview-card reveal">
+            <div class="preview-box">
+              Resume Preview Placeholder
+              <div style="margin-top:10px; font-size:13px; color:rgba(255,255,255,.6);">Replace with your PDF preview image if desired</div>
+            </div>
+          </div>
+
+          <div class="card preview-card reveal" style="transition-delay:90ms;">
+            <h3 style="margin:0 0 10px;">Download My Resume</h3>
+            <p style="margin:0 0 16px; color:var(--muted);">
+              This is a placeholder download. Place your actual resume file as <strong>resume.pdf</strong> in the same folder.
+            </p>
+
+            <a class="btn btn-primary" href="#" data-download-resume>
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download Resume (PDF)
+            </a>
+
+            <div style="height:14px;"></div>
+
+            <div class="badge-list">
+              <span class="badge"><span class="spark" aria-hidden="true">✦</span>Internship Applications</span>
+              <span class="badge"><span class="spark" aria-hidden="true">✦</span>Tech-focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>Send a message or reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card form-card reveal">
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input class="input" id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea class="textarea" id="message" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Send Message
+                </button>
+                <span class="form-note" data-form-status> </span>
+              </div>
+
+              <p class="form-note" style="margin-top:10px;">
+                Demo form UX only (no backend connected).
+              </p>
+            </form>
+          </div>
+
+          <aside class="card contact-info reveal" style="transition-delay:90ms;">
+            <h3 style="margin:0; font-size:18px;">Reach Out</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <div class="k">Email</div>
+                  <div class="v">vmarasu555v@gmail.com</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <div class="k">Phone</div>
+                  <div class="v">+91 8754906185</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <div class="k">Location</div>
+                  <div class="v">India • Open to Remote</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-row" aria-label="Social links">
+              <a class="btn" href="#" aria-label="GitHub" title="GitHub" style="padding:10px 14px;">
+                <i class="fa-brands fa-github"></i>
+                <span style="font-weight:800; font-size:14px;">GitHub</span>
+              </a>
+              <a class="btn" href="#" aria-label="LinkedIn" title="LinkedIn" style="padding:10px 14px;">
+                <i class="fa-brands fa-linkedin"></i>
+                <span style="font-weight:800; font-size:14px;">LinkedIn</span>
+              </a>
+            </div>
+
+            <p class="form-note" style="margin:16px 0 0;">
+              Replace placeholders with your real contact details.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div style="color:var(--muted); font-size:13px;">
+          © <span id="year"></span> V.M. Arasu. All rights reserved.
+        </div>
+
+        <nav class="footer-links" aria-label="Quick navigation">
+          <a href="#about" data-scroll>About</a>
+          <a href="#skills" data-scroll>Skills</a>
+          <a href="#education" data-scroll>Education</a>
+          <a href="#certifications" data-scroll>Certifications</a>
+          <a href="#projects" data-scroll>Projects</a>
+          <a href="#contact" data-scroll>Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
